@@ -11,7 +11,7 @@ export type Aparicion =
   | { tipo: "palabra"; desde: number; hasta: number; texto: string };
 
 const tarjeta: React.CSSProperties = {
-  background: "rgba(10,15,36,0.82)",
+  background: "rgba(13,15,18,0.84)",
   border: "2px solid rgba(255,255,255,0.14)",
   borderRadius: 40,
   boxShadow: "0 30px 90px rgba(0,0,0,0.55)",
@@ -81,7 +81,7 @@ export const CapaAparicion: React.FC<{ a: Aparicion }> = ({ a }) => {
 
   return (
     <div style={{ position: "absolute", top: 300, width: "100%", textAlign: "center" }}>
-      <span style={{ display: "inline-block", padding: "20px 50px", borderRadius: 30, background: degradado, fontFamily: fuenteTitulo, fontSize: 110, fontWeight: 900, color: "#fff", letterSpacing: "-0.04em", boxShadow: `0 20px 70px ${colores.violeta}99`, transform: `scale(${v}) rotate(${(1 - v) * -8 - 2}deg)` }}>{a.texto}</span>
+      <span style={{ display: "inline-block", padding: "20px 50px", borderRadius: 30, background: degradado, fontFamily: fuenteTitulo, fontSize: 110, fontWeight: 900, color: "#fff", letterSpacing: "-0.04em", boxShadow: `0 20px 70px ${colores.celeste}77`, transform: `scale(${v}) rotate(${(1 - v) * -8 - 2}deg)` }}>{a.texto}</span>
     </div>
   );
 };

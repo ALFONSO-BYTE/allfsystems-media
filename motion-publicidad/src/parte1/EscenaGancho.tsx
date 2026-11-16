@@ -36,7 +36,7 @@ export const EscenaGancho: React.FC = () => {
                   fontSize: 150,
                   fontWeight: 900,
                   letterSpacing: "-0.05em",
-                  color: colores.rojo,
+                  color: i === viejos.length - 1 ? colores.texto : colores.grisTexto,
                   opacity: activo ? e : 0,
                   transform: `scale(${0.7 + e * 0.3})`,
                   transformOrigin: "left center",
@@ -44,7 +44,7 @@ export const EscenaGancho: React.FC = () => {
               >
                 {v}?
                 {i === viejos.length - 1 && (
-                  <div style={{ position: "absolute", left: -10, right: -10, top: "52%", height: 16, borderRadius: 10, background: "#fff", transform: `scaleX(${tachado}) rotate(-4deg)`, transformOrigin: "left" }} />
+                  <div style={{ position: "absolute", left: -10, right: -10, top: "52%", height: 16, borderRadius: 10, background: colores.celeste, boxShadow: `0 0 30px ${colores.celeste}`, transform: `scaleX(${tachado}) rotate(-4deg)`, transformOrigin: "left" }} />
                 )}
               </div>
             );

@@ -39,8 +39,8 @@ export const EscenaPanel: React.FC = () => {
               top: g.y,
               transform: `scale(${p}) translateY(${Math.sin((f + g.d) / 25) * 10}px)`,
               padding: "22px 34px",
-              borderRadius: 30,
-              background: "rgba(14,20,48,0.85)",
+              borderRadius: 999,
+              background: "rgba(13,15,18,0.88)",
               border: `2px solid ${colores.linea}`,
               backdropFilter: "blur(10px)",
               boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
@@ -54,7 +54,7 @@ export const EscenaPanel: React.FC = () => {
               whiteSpace: "nowrap",
             }}
           >
-            <span style={{ width: 22, height: 22, borderRadius: 11, background: colores.verde, boxShadow: `0 0 20px ${colores.verde}` }} />
+            <span style={{ width: 22, height: 22, borderRadius: 11, background: colores.celeste, boxShadow: `0 0 20px ${colores.celeste}` }} />
             {g.t}
           </div>
         );

@@ -1,4 +1,6 @@
-# Videos animados AllfSystems
+# Motion publicidad · AllfSystems
+
+Videos terminados en `videos/`. Logo y tema de color en `marca/`.
 
 Formato vertical 1080x1920 a 30 fps, listo para Reels, TikTok y Shorts.
 
